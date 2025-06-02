@@ -1,4 +1,4 @@
-package io.matthijs;
+package io.matthijs.tja;
 
 import io.quarkus.qute.Template;
 import io.quarkus.qute.TemplateInstance;
