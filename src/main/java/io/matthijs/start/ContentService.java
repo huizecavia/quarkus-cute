@@ -12,5 +12,5 @@ import java.util.Set;
 public interface ContentService {
 
     @GET
-    Set<Content> getById(@RestQuery String id);
+    Set<Content> getByLimit(@RestQuery String limit);
 }
