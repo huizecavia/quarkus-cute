@@ -13,8 +13,14 @@ import java.util.concurrent.CompletionStage;
 @RegisterRestClient(configKey = "extensions-api")
 public interface ExtensionsService {
 
+
+//    http://localhost:8080/extension/id/io.quarkus:quarkus-rest-client
+
     @GET
     Set<Extension> getById(@RestQuery String id);
+
+    @GET
+    Set<Extension> getByShortname(@RestQuery String shortname);
 
     @GET
     CompletionStage<Set<Extension>> getByIdAsync(@RestQuery String id);

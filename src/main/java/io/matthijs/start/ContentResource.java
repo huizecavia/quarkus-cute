@@ -9,6 +9,12 @@ import java.util.Set;
 @Path("/contentful")
 public class ContentResource {
 
+
+//    https://www.contentful.com/developers/docs/concepts/apis/#content-delivery-api
+//  https://www.contentful.com/developers/docs/references/content-delivery-api/
+//    https://www.contentful.com/developers/docs/references/content-delivery-api/#/reference/entries/entry/get-a-single-entry/console/java
+
+
     @RestClient
     ContentService contentService;
 

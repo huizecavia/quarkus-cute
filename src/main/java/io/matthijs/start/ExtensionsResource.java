@@ -24,6 +24,14 @@ public class ExtensionsResource {
     }
 
     @GET
+    @Path("/sn/{sn}")
+    @Blocking
+    public Set<Extension> sn(String sn) {
+        return extensionsService.getByShortname(sn);
+    }
+
+
+    @GET
     @Path("/id-async/{id}")
     public CompletionStage<Set<Extension>> idAsync(String id) {
         return extensionsService.getByIdAsync(id);
